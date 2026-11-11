@@ -1,0 +1,32 @@
+{
+    "project": "Fraud Detection - ML Model Engineering",
+    "model_name": "LightGBM",
+    "model_type": "Binary Classification",
+    "target_variable": "isFraud",
+    "input_features": [
+        "step",
+        "type",
+        "amount",
+        "oldbalanceOrg",
+        "oldbalanceDest"
+    ],
+    "classification_threshold": 0.9714237969566369,
+    "validation_metrics": {
+        "Accuracy": 0.9960224279091562,
+        "Precision": 0.1226950354609929,
+        "Recall": 0.9267857142857143,
+        "F1-Score": 0.21670146137787055,
+        "PR-AUC": 0.7160414500898526
+    },
+    "test_metrics": {
+        "Accuracy": 0.9985592376201159,
+        "Precision": 0.9354945418458485,
+        "Recall": 0.7052369077306733,
+        "F1-Score": 0.8042087302715768,
+        "PR-AUC": 0.8861811356334778
+    },
+    "libraries": {
+        "scikit_learn": "1.6.1",
+        "lightgbm": "4.6.0"
+    }
+}
